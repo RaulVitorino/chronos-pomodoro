@@ -1,9 +1,14 @@
+import type React from "react";
 import styles from "./Heading.module.css";
 
-function Heading() {
-  return (
-    <h1 className={`${styles.cyan} ${styles.heading}`}>Ola mundo do app</h1>
-  );
+type HeadingProps = {
+  children: React.ReactNode;
+};
+
+function Heading({ children }: HeadingProps) {
+  console.log({ children });
+
+  return <h1 className={styles.heading}>{children}</h1>;
 }
 
 export default Heading;
