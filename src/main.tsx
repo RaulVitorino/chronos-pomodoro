@@ -6,6 +6,5 @@ import AppFuncIncial from "./App";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppFuncIncial />
-    <h1>Ola mundo do main</h1>
   </StrictMode>
 );
